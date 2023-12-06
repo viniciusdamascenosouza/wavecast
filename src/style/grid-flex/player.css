@@ -1,0 +1,115 @@
+button {
+    background: transparent;
+    border: none;
+    color: inherit;
+    padding: 0rem;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+:root {
+    --cor-texto-principal: #ffffff;
+    --fonte-textos: 'Open Sans', sans-serif;
+    --gradiente: linear-gradient(53deg, #072041 0%, #041833 50%, #154580 100%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: var(--cor-texto-principal);
+    background: var(--gradiente);
+    font-family: var(--fonte-textos);
+    height: 100vh;
+    width: 100vw;
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+.player_descricao, .player_temporizador-cronometro {
+    cursor: default;
+}
+
+.player_temporizador-cronometro_tempo {
+    width: 100%;
+    height: 0.25rem;
+    background: white;
+    border-radius: .5rem;
+}
+
+.player_descricao h3 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.player_descricao span {
+    font-size: 0.9rem;
+}
+
+.player_volume_nivel {
+    width: 70%;
+    height: 0.25rem;
+    background: white;
+    border-radius: .5rem;
+}
+
+/*Posicionamento de colunas e linhas do container principal */
+
+.secao-player {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 204px 1fr 164px;
+    grid-template-rows: auto;
+    column-gap: 1.25rem;
+}
+
+.player_descricao {
+    grid-area: 1 / 1 / 2 / 2;
+    display: grid;  /* Grid para área de descrição do conteúdo */ 
+    grid-template-columns: 56px auto; /* Colunas para área de descrição do conteúdo */
+    grid-template-rows: auto auto; /* Linhas para área de descrição do conteúdo */
+    row-gap: .4rem;
+    column-gap: 0.6rem;
+}
+
+.player_temporizador {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.player_volume {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+/* Área descrição do conteúdo */
+
+.player_descricao img {
+    grid-area: 1 / 1 / 3 / 2;
+    align-self: center;
+}
+
+.player_descricao h3 {
+    grid-area: 1 / 2 / 2 / 3;
+    align-self: end;
+}
+
+.player_descricao span {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+/* Área botões de player e volume */
+
+.player_volume, .player_temporizador-cronometro {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+}
+
+.player_temporizador-botoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}

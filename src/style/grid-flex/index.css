@@ -17,3 +17,7 @@ body {
 .principal {
     grid-area: main;
 }
+
+.secao-player {
+    grid-area: main;
+}

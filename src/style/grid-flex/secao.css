@@ -13,3 +13,16 @@
     grid-template-columns: repeat(auto-fit, minmax(min(80%/2, max(350px, 80%/3)), 1fr));
     gap: 1.25rem;
 }
+
+.secao-vertical {
+    grid-template-columns: 1fr auto;
+}
+
+.secao-vertical .secao__cartoes {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 1rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    grid-column: 1/3;
+}

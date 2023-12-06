@@ -34,10 +34,6 @@ body {
     font-family: var(--fonte-textos);
 }
 
-main {
-    margin-bottom: 3.43rem;
-}
-
 .container {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -187,4 +183,7 @@ main {
     margin-bottom: .25rem;
 }
 
-
+/* player */
+.secao-player{
+    margin-bottom: 7em;
+}

@@ -1,5 +1,6 @@
 @media only screen and (max-width: 1023px) {
 
+
     .menu-lateral,
     .rodape,
     .cabecalho__botao,
@@ -21,6 +22,21 @@
 
     .navbar {
         display: block;
+        padding: 16px;
+    }
+
+    .navbar__items {
+        display: flex;
+        column-gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conjunto__item_navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 0.5rem;
     }
 
     .secao-horizontal .cartao {
