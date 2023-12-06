@@ -1,4 +1,5 @@
 @media only screen and (max-width: 1023px) {
+
     .menu-lateral,
     .rodape,
     .cabecalho__botao,
@@ -14,16 +15,25 @@
         padding-right: 1rem;
     }
 
+    .cabecalho {
+        justify-self: center;
+    }
+
     .navbar {
         display: block;
-    }   
+    }
+
+    .secao-horizontal .cartao {
+        column-gap: 0.5rem;
+    }
 
     .secao-horizontal .cartao__imagem {
         height: 4.58rem;
     }
- 
+
     .secao-horizontal .cartao__titulo {
         font: 700 14px/20px Open Sans, sans-serif;
+        align-self: center;
     }
 
     .secao-vertical .cartao {
@@ -40,9 +50,13 @@
         padding-right: 1.25rem;
     }
 
-    .cabecalho .cabecalho__logo,
-    .cabecalho__botao__avancar {
+    .cabecalho__botao__avancar,
+    .cabecalho .cabecalho__logo {
         display: none;
+    }
+
+    .menu-lateral {
+        width: 208px;
     }
 
     .navbar {
@@ -73,6 +87,10 @@
     .navbar,
     .cabecalho__logo {
         display: none;
+    }
+
+    .menu-lateral {
+        width: 228px;
     }
 
 }
